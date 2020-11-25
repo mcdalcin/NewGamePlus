@@ -1,6 +1,7 @@
-Not compatable with Bethesda version.
+Not compatible with Bethesda version.
 
 Installs a "New Game +" style save in your DOOM Eternal save directory.
+
 The game starts with:
 - All suit upgrades
 - All Weapons (excluding Rocket Launcher, due to a soft lock)
