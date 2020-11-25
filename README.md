@@ -1,3 +1,5 @@
+Not compatable with Bethesda version.
+
 Installs a "New Game +" style save in your DOOM Eternal save directory.
 The game starts with:
 - All suit upgrades
