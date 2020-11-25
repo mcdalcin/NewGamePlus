@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Threading;
 
 namespace NewGamePlus {
     class NewGamePlus {
@@ -15,10 +14,11 @@ namespace NewGamePlus {
             Console.Write("CAUTION: This will overwrite your save slot 1. Are you sure you want to continue? [y / n]: ");
             ConsoleKey response = Console.ReadKey(false).Key;
             if (response != ConsoleKey.Y) {
-                Console.WriteLine("Aborting...");
-                Thread.Sleep(2000);
+                Console.WriteLine("Aborted. Press any key to exit.");
+                Console.ReadKey();
                 return;
             }
+
             Console.WriteLine("\n\nWriting NewGame+ files...");
             EncryptAndWriteFiles(savePath);
             Console.WriteLine("\n\nFinished successfully. Press any key to exit.");
