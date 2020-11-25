@@ -10,3 +10,8 @@ The game starts with:
 - No Weapon Upgrades excluding the Meat Hook which comes fully upgraded.
 
 The save was created with a mod but is not required to run the save.
+
+INTRUCTIONS
+1 - Make sure there is a save in slot 1. That save will be replaced! Back it up if needed.
+2 - If open, close DOOM Eternal
+3 - Run the New Game + Tool
