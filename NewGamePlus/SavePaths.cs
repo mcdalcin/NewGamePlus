@@ -15,11 +15,12 @@ namespace NewGamePlus {
                 string tempPath = Path.Combine(steamId3, SteamGameID, "remote", "GAME-AUTOSAVE0");
                 if (Directory.Exists(tempPath)) {
                     SteamSavePath = tempPath;
-                    SteamId64 = Utilities.Id3ToId64(Path.GetFileNameWithoutExtension(steamId3));
+                    SteamId64 = Utilities.SteamId3ToId64(Path.GetFileNameWithoutExtension(steamId3));
                     break;
                 }
             }
 
+            // TODO(mcdalcin): Get it to work with Bethesda.
             string bnetSavePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Saved Games", "id Software", "DOOMEternal", "base", "savegame", "GAME-AUTOSAVE0");
             BnetSavePath = Directory.Exists(bnetSavePath) ? bnetSavePath : "";
         }
